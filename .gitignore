@@ -1,0 +1,35 @@
+# Environment variables & secrets (NEVER commit)
+.env
+*.env
+backend/.env
+
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Python bytecode and caches
+__pycache__/
+backend/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Node dependencies
+node_modules/
+frontend/node_modules/
+.vite/
+frontend/.vite/
+
+# Large raw training ratings file (not needed at runtime because backend/model is precomputed)
+backend/data/ratings.csv
+
+# Temporary files & logs
+backend/data/*.tmp
+*.log
+*.png
+
+# OS metadata
+.DS_Store
+Thumbs.db
